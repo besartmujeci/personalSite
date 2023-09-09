@@ -1,0 +1,12 @@
+i {
+    font-size: 3rem;
+    padding-left: 20px;
+  }
+  
+.custom-card {
+    height: 30rem; /* Adjust this value as needed */
+}
+
+.card-text {
+    text-align: center;
+}
