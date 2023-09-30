@@ -3,10 +3,54 @@ i {
     padding-left: 20px;
   }
   
-.custom-card {
-    height: 30rem; /* Adjust this value as needed */
+  .timeline {
+    position: relative;
+    margin: 50px 0;
 }
 
-.card-text {
-    text-align: center;
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: black;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.timeline-item::before,
+.timeline-item::after {
+    content: "";
+    display: table;
+}
+
+.timeline-item::before {
+    content: attr(data-year);
+    position: absolute;
+    top: 0;
+    right: 100%;
+    font-size: 0.85em;
+    padding: 0.2em 0.5em;
+    background-color: black;
+    color: #fff;
+    border-radius: 0.25em;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-item::after {
+    clear: both;
+}
+
+.timeline-content {
+    padding: 10px;
+    border-radius: 0.25em;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
