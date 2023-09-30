@@ -6,7 +6,6 @@ i {
   .timeline {
     position: relative;
     margin: 50px 0;
-    margin-left: 45px;
 }
 
 .timeline::before {
@@ -34,7 +33,6 @@ i {
 
 .timeline-item::before {
     content: attr(data-year);
-    position: absolute;
     top: 0;
     right: 100%;
     font-size: 0.85em;
